@@ -2,10 +2,10 @@ package arbeitsverwaltung;
 
 public class Arbeitsverwaltung {
 
-	String name;
-	String Abteilung;
-	int Gehalt;
-	int Personalnummer;
+	private String name;
+	private String Abteilung;
+	private int Gehalt;
+	private int Personalnummer;
 	
 	
 	Arbeitsverwaltung(String name , String Abteilung, int Gehalt, int Personalnummer){
@@ -15,17 +15,17 @@ public class Arbeitsverwaltung {
 		this.Personalnummer = Personalnummer;
 	}
 	
-	void erhoeheGehalt(int Erhoehung) {
+	public void erhoeheGehalt(int Erhoehung) {
 		this.Gehalt = this.Gehalt + Erhoehung;
 		System.out.println(this.name + " Dein Gehalt wurde auf " + this.Gehalt + " EUR erhoeht.");
 	}
 	
-	void versetzeInAbteilung(String Versetzung) {
+	public void versetzeInAbteilung(String Versetzung) {
 		this.Abteilung = Versetzung;
 		System.out.println(this.name + " Du wurdest in die Abteilung " + this.Abteilung + " versetzt.");
 	}
 	
-	void Ausweis() {
+	public void Ausweis() {
 		System.out.println("Name: "+this.name + "\n" + "Abteilung: "+this.Abteilung + "\n" + "Personalnummer: " +this.Personalnummer);
 	
 	}

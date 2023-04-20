@@ -1,0 +1,22 @@
+package arbeitsverwaltung;
+
+public class Main {
+
+	public static void main(String[] args) {
+	
+		Arbeitsverwaltung Arbeitnehmer1 = new Arbeitsverwaltung("Richard", "Fertigung", 35000 ,100300);
+		Arbeitsverwaltung Arbeitnehmer2 = new Arbeitsverwaltung ("Tom", "Konstruktion", 50000, 100999);
+		
+		Arbeitnehmer1.erhoeheGehalt(10000);
+		Arbeitnehmer2.erhoeheGehalt(10000);
+		System.out.println("\n");
+		
+		Arbeitnehmer1.Ausweis();
+		System.out.println("\n");
+		Arbeitnehmer2.Ausweis();
+		
+		System.out.println("\n");
+		Arbeitnehmer1.versetzeInAbteilung("Maschinenbau");
+		System.out.println("\n");
+		Arbeitnehmer2.versetzeInAbteilung("Vertrieb");
+	}

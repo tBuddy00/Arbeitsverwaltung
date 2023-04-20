@@ -1,0 +1,36 @@
+package arbeitsverwaltung;
+
+public class Arbeitsverwaltung {
+
+	String name;
+	String Abteilung;
+	int Gehalt;
+	int Personalnummer;
+	
+	
+	Arbeitsverwaltung(String name , String Abteilung, int Gehalt, int Personalnummer){
+		this.name = name;
+		this.Abteilung = Abteilung;
+		this.Gehalt = Gehalt;
+		this.Personalnummer = Personalnummer;
+	}
+	
+	void erhoeheGehalt(int Erhoehung) {
+		this.Gehalt = this.Gehalt + Erhoehung;
+		System.out.println(this.name + " Dein Gehalt wurde auf " + this.Gehalt + " EUR erhoeht.");
+	}
+	
+	void versetzeInAbteilung(String Versetzung) {
+		this.Abteilung = Versetzung;
+		System.out.println(this.name + " Du wurdest in die Abteilung " + this.Abteilung + " versetzt.");
+	}
+	
+	void Ausweis() {
+		System.out.println("Name: "+this.name + "\n" + "Abteilung: "+this.Abteilung + "\n" + "Personalnummer: " +this.Personalnummer);
+	
+	}
+		
+		
+}
+	
+
